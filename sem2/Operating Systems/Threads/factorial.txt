@@ -1,0 +1,88 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+/*
+Sa se scrie un program care citeste un numar natural "N" de la tastatura si creeaza 5 thread-uri.
+Fiecare thread va incrementa o variabila globala "g" si va calcula g! si va aduna rezultatul la o
+alta variabila globala "sumaFactorial". Threadurile se vor opri cand variabila "g" va depasi variabila "N".
+*/
+
+unsigned sumaFactorial;
+unsigned g;
+unsigned N;
+pthread_mutex_t mtx_g = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t mtx_sum = PTHREAD_MUTEX_INITIALIZER;
+
+unsigned fact(unsigned n)
+{
+        unsigned f=1;
+        while(n > 1)
+        {
+                f = f * n;
+                n--;
+        }
+
+        return f;
+}
+
+void *inc(void* ptr)
+{
+
+        while(1)
+        {
+                pthread_mutex_lock(&mtx_g);
+
+                if(g >= N)
+                {
+                        pthread_mutex_unlock(&mtx_g);
+                        return NULL;
+                }
+                g++;
+                unsigned local_g = g;
+
+                pthread_mutex_unlock(&mtx_g);
+
+
+
+                unsigned factorial = fact(local_g);
+
+                printf("g=%d factorial=%d\n",local_g,factorial);
+
+                pthread_mutex_lock(&mtx_sum);
+
+                sumaFactorial = sumaFactorial + factorial;
+
+                pthread_mutex_unlock(&mtx_sum);
+        }
+        return NULL;
+
+}
+
+int main()
+{
+
+        pthread_t th[5];
+        int i;
+
+
+        printf("Citeste N:");
+        scanf("%d",&N);
+
+        for(i = 0; i < 5; i++)
+        {
+                pthread_create(&th[i], NULL, inc, NULL);
+        }
+
+        for(i = 0; i < 5; i++)
+        {
+                pthread_join(th[i], NULL);
+        }
+
+        printf("Suma factorial = %d\n", sumaFactorial);
+
+        pthread_mutex_destroy(&mtx_g);
+        pthread_mutex_destroy(&mtx_sum);
+
+        return 0;
+}

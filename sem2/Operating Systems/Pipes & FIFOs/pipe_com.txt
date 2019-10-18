@@ -1,0 +1,61 @@
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+        int p2c[2];
+        int c2p[2];
+
+        if(pipe(p2c) == -1)
+        {
+                printf("Pipe was not created.\n");
+                exit(0);
+        }
+
+        if(pipe(c2p) == -1)
+        {
+                printf("Pipe was not created.\n");
+                exit(0);
+        }
+
+        close(p2c[0]);
+        close(c2p[0]);
+        close(c2p[1]);
+
+
+        int n = atoi(argv[1]);
+
+        int i;
+        for(i=0; i<n; i++)
+        {
+                int number = i;
+                printf("Sending: %d\n", number);
+                write(p2c[1], &number, sizeof(int));
+        }
+
+        close(p2c[1]);
+
+
+        if(fork() == 0)
+        {
+                open(p2c[0]);
+                int number;
+                int j;
+
+
+                for(j=0; j<n; j++)
+                {
+                        read(p2c[0], &number, sizeof(int));
+                        printf("Recieved: %d\n", number);
+
+                }
+                exit(0);
+        }
+
+        wait(0);
+
+        return 0;
+}

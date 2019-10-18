@@ -1,0 +1,62 @@
+
+#include <stdlib.h>
+#include <pthread.h>
+#include <stdio.h>
+
+
+
+#define NTHREADS 1
+
+pthread_mutex_t mtx;
+
+struct file_enc {
+        char filename[25];
+        char key;
+}
+
+void* main_thread(void* dummyPtr)
+{
+        // read file name and encryption key
+        // create thread for encryption
+        // wait encryption thread
+        // print result
+
+        file_enc fe;
+
+        printf("File:");
+        scanf("%s", fe.filename);
+
+        printf("Key:");
+        scanf("%c",&fe.key);
+
+        pthread_t enc_threads[NTHREADS];
+        int i, j;
+
+        for(i=0, i < NTHREADS, i++)
+        {
+                pthread_create(&enc_threads[i], NULL encrypt_thread, );
+        }
+
+        return NULL;
+}
+
+
+void* encrypt_thread(void* ptr)
+{
+        //open file
+        //read content
+        //encrypt the content and write in destination file
+
+        return NULL;
+}
+
+
+int main()
+{
+
+        pthread_t t;
+        pthread_create(&t, NULL, main_thread, NULL);
+        pthread_join(t, NULL);
+
+        return 0;
+}

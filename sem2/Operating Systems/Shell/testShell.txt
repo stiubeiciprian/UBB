@@ -1,0 +1,75 @@
+
+#!/bin/bash
+
+if [ -z $1 ];then
+        echo "No parameters given!"
+fi
+
+while [ ! -z $1 ]
+do
+
+        directory=$1
+
+        if [ -d $directory ];then
+
+
+                dim=0
+
+                for file in `find $directory -type f`;do
+
+                        current_dim=`du $file | awk '{print $1}'`
+
+                        if [ $current_dim -gt $dim ];then
+                                filename=$file
+                                dim=$current_dim
+
+                        fi
+
+                done
+
+                echo "$directory - $filename - $dim"
+
+        else
+                echo "$directory is not a directory."
+        fi
+
+        shift 1
+done
+[sfie2624@linux OS]$ cat testShell.bash
+#!/bin/bash
+
+if [ -z $1 ]
+then
+        echo No directory recieved!
+else
+        directory=$1
+
+        if [ -z $4 ]
+        then
+                echo You must give at least 3 words as input.
+        else
+
+                file_counter=0
+                shift 1
+
+                for file in `find $directory -type f`
+                do
+
+                        for word in $*
+                        do
+                                words_found=`cat $file | grep -c "$word"`
+
+                                if [ $words_found -gt 1 ]
+                                then
+
+                                        file_counter=`expr $file_counter + 1`
+
+                                fi
+
+                        done
+
+                done
+        fi
+fi
+
+echo Files found: $file_counter

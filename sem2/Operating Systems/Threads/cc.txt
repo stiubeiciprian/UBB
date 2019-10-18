@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+if [ -z $1 ];then
+        echo "Please give at least 1 file as parameter."
+        exit
+fi
+
+if [ ! -f $1 ];then
+        echo "No file given!"
+        exit
+fi
+
+file_name=$1
+
+gcc -Wall -Werror -g -o "$1.exe" $1 -lpthread
+
+./$1.exe

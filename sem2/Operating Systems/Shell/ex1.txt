@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for f in $*; do
+        grep -io '\b[a-z]\+\b' $f
+done | sort | uniq -c | sort -r -n -k1 | awk '{print $NF}'

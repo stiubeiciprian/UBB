@@ -1,0 +1,37 @@
+
+#!/bin/bash
+
+if [ -z $1 ];then
+        echo "No parameters given!"
+fi
+
+while [ ! -z $1 ]
+do
+
+        directory=$1
+
+        if [ -d $directory ];then
+
+
+                dim=0
+
+                for file in `find $directory -type f`;do
+
+                        current_dim=`du $file | awk '{print $1}'`
+
+                        if [ $current_dim -gt $dim ];then
+                                filename=$file
+                                dim=$current_dim
+
+                        fi
+
+                done
+
+                echo "$directory - $filename - $dim"
+
+        else
+                echo "$directory is not a directory."
+        fi
+
+        shift 1
+done

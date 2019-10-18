@@ -1,0 +1,11 @@
+#!/bin/bash
+
+w=`who | awk '{print $1}'`
+
+"$w"|while read line; do
+
+        proc=`ps -u "$line"|wc -l`
+
+        echo $proc
+
+done
