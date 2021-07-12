@@ -1,0 +1,35 @@
+program = statementList
+statementList = statement | statement "newLine" statementList
+
+statement = simpleStatement | structStatement
+compoundStatement = statement | statement "newLine" "tab" compoundStatement
+
+simpleStatement = variableDeclarationStatement | assignmentStatement | printStatement | readStatement
+variableDeclarationStatement = type identifier { "=" expression }
+assignmentStatement = identifier [ "[" nr "]" ] "=" expression
+printStatement = "print(" (identifier|constant|expression) ")" 
+readStatement = "input(" constant ")"
+
+basicType = "int" | "char" | "string" | "bool"
+arrayType = basicType "[" nr "]"
+type  = basicType | arrayType
+
+
+expression = arithmeticExpression | logicExpression | relationalExpression
+condition = [not] (logicExpression | relationalExpression | identifier | "True" | "False")
+
+arithmeticExpression = arithmeticExpression ("+" | "-") term | term
+term = term ("*" | "/") factor | factor
+factor = "(" arithmeticExpression ")" | identifier | constant
+
+logicExpression = [not] expression ("or" | "and") [not] expression
+relationalExpression = arithmeticExpression relation arithmeticExpression
+relation = "<" | "<=" | "==" | "!=" | ">=" | ">"
+
+structStatement = compoundStatement | ifStatement | whileStatement | forStatement
+ifStatement = "if" condition ":" "newLine" "tab" statement ["else:" "newLine" "tab" statement] | ["elif:" "newLine" "tab"] statement
+whileStatement = "while" condition ":" "newLine" "tab" statement
+forStatement = "for" (variableDeclarationStatement | assignmentStatement) "," condition "," assignmentStatement ":" "newLine" "tab" statement
+
+
+

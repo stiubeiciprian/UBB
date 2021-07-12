@@ -1,0 +1,6 @@
+<ol class="students">
+    <li *ngFor="let student of students " (click)="onSelect(student)">
+      <span>{{student.name}}</span>
+  </li>
+</ol>
+<button (click)="addStudent()">Add Student</button>

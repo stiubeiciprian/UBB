@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.desktop {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #fff;
+  font-size: 4.5em;
+  font-family: Helvetica;
+  margin-bottom: 10px;
+}
+
+#d1 {
+  background-color: rgba(255,0,0,0.5);
+}
+
+#d2 {
+  background-color: rgba(0,255,0,0.5);
+}
+
+#d3 {
+  background-color: rgba(0,0,255,0.5);
+}
+
+#d4 {
+  background-color: rgba(0,0,0,0.5);
+}

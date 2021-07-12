@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+footer {
+  margin-top: -50px;
+  height: 50px;
+  background-color: #2a2a2a;
+}
+
+main {
+  height: 100%;
+  background: url("https://mspoweruser.com/wp-content/uploads/2018/11/windowslight.jpg");
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  width: 100%;
+}
+
+.start-menu {
+  width: 40px;
+  height: 40px;
+  padding: 10px 5px 0 10px;
+}
+
+.start-menu:hover {
+  background-color: #5a5a5a;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a, .dropdown-content span {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Arial";
+}
+
+.dropdown span {
+  display: block;
+  width: 100%;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover > .dropdown-content {
+  left: 160px;
+  bottom: 0;
+  display: block;
+}
+
+.dropdown:hover > .main-content {
+  left: 0;
+  bottom: 100%;
+}
+
+
+/* Text effects */
+.window {
+  padding: 20% 0 0 30%;
+  display: flex;
+}
+
+h1 {
+  padding: 0 10px;
+  font-family: "Arial";
+}
+
+#glow {
+  color: #fff;
+  text-shadow: 0 0 12px #fff;
+}
+
+#fire {
+  color: #fff;
+  animation: animation 1s ease-in-out infinite alternate;
+}
+
+@keyframes animation
+{
+from {text-shadow: 0 0 1px #fefcc9,
+  1px -1px 2px #feec85,
+  -2px -2px 3px #ffae34,
+  2px -4px 4px #ec760c,
+  -2px -6px 5px #cd4606,
+  0 -8px 6px #973716,
+  1px -9px 7px #451b0e;}
+to {text-shadow: 0 0 2px #fefcc9,
+  1px -1px 3px #fefcc9,
+  -2px -2px 4px #feec85,
+  2px -4px 4px #ffae34,
+  -2px -5px 6px #ec760c,
+  0 -8px 7px #cd4606,
+  1px -9px 8px  #973716;}
+}
+
+#shadow {
+  color: #fff;
+  text-shadow: -5px 5px 15px #000;
+}
+
+#underline {
+  color: #fff;
+  text-shadow: 0 2px 0 #000;
+}

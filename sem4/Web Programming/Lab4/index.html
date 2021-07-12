@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 4</title>
+    <style media="screen">
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      body {
+        background-size: contain;
+        background: url("bg1.png");
+      }
+
+      button {
+        font-size: 1.5em;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .centre {
+        padding-left: 100px;
+        padding-top: 100px;
+      }
+
+      li {
+        margin-top: 20px;
+        font-size: 1.4em;
+        color: #fff;
+      }
+
+
+      a {
+        font-size: 1.4em;
+        color: #fff;
+        padding: 4px;
+        border: 1px solid #fff;
+        background-color: rgba(255,255,255,0.6);
+      }
+
+    </style>
+
+    <script type="text/javascript">
+      var urls = ["bg1.png", "bg2.png", "bg3.png", "bg4.png", "bg5.png"];
+      var currentUrlIndex = 0;
+
+      function changeBackground() {
+        currentUrlIndex += 1;
+        currentUrlIndex %= 5;
+        document.body.style.backgroundImage = "url(" + urls[currentUrlIndex]+ ")";
+      }
+
+      function changeLinks() {
+        var links = document.getElementsByTagName("a");
+
+        for(var link of links) {
+          link.style.borderRadius = "10px";
+          link.style.backgroundColor = "rgba(10,10,200,0.6)";
+          link.style.textDecoration = "none";
+          link.style.color = "#aaf";
+        }
+      }
+    </script>
+
+  </head>
+  <body>
+    <div class="centre">
+      <button onclick="changeBackground()" type="button" name="background-button">Change Background</button>
+      <button onclick="changeLinks()" type="button" name="links-button">Change Links</button>
+      <br>
+      <ol>
+        <li><a href="#">Google</a></li>
+        <li><a href="#">Amazon</a></li>
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Twitch</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Coursera</a></li>
+        <li><a href="#">Udemy</a></li>
+        <li><a href="#">Javascript Tutorials</a></li>
+        <li><a href="#">JQuery Tutorials</a></li>
+        <li><a href="#">PHP Tutorials</a></li>
+      </ol>
+    </div>
+  </body>
+</html>

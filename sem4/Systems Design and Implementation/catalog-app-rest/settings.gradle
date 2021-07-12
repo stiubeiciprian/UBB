@@ -1,0 +1,5 @@
+rootProject.name = 'catalog-app'
+include 'client'
+include 'core'
+include 'web'
+

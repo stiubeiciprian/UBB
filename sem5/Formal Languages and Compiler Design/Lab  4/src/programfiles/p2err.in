@@ -1,0 +1,4 @@
+int a=asd
+
+if a <=b and a <= c:
+    print("min=, a)

@@ -1,0 +1,7 @@
+<ol class="problems">
+  <li *ngFor="let problem of problems"
+  (click)="onSelect(problem)">
+    {{problem.description}}
+  </li>
+</ol>
+<button (click)="addProblem()">Add problem</button>

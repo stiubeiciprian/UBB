@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/add_book_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:text="@string/add_book_title"
+                android:textColor="@android:color/black"
+                android:textSize="38sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/title_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_book_title" />
+
+
+            <EditText
+                android:id="@+id/author_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Author"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_input" />
+
+
+            <EditText
+                android:id="@+id/genres_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Genres"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/author_input" />
+
+
+            <EditText
+                android:id="@+id/page_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pages"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/genres_input" />
+
+
+            <EditText
+                android:id="@+id/current_page_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Current page"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/page_input" />
+
+            <EditText
+                android:id="@+id/description_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/current_page_input"
+                 />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <Button
+                    android:id="@+id/add_book_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_green_dark"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/add_button_text"
+                    android:textColor="@android:color/white" />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>

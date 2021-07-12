@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="lab2" targetName="lab2" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5be0d2bb-ba33-4308-9f34-b822e454a1de" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1jNRuVe3u1ZAxdEDodSUQj3WkCa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lab2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab2" TARGET_NAME="lab2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab2" RUN_TARGET_NAME="lab2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5be0d2bb-ba33-4308-9f34-b822e454a1de" name="Default Changelist" comment="" />
+      <created>1603642786572</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603642786572</updated>
+      <workItem from="1603642789781" duration="4508000" />
+      <workItem from="1603709102251" duration="6786000" />
+      <workItem from="1603721002269" duration="2557000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1603723561321">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603723561321" />
+    <state width="1877" height="208" key="GridCell.Tab.0.center" timestamp="1603723561321">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603723561321" />
+    <state width="1877" height="208" key="GridCell.Tab.0.left" timestamp="1603723561321">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603723561321" />
+    <state width="1877" height="208" key="GridCell.Tab.0.right" timestamp="1603723561321">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603723561321" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1603716018217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1603716018217" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603645299490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603645299490" />
+  </component>
+</project>

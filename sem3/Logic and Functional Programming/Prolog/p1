@@ -1,0 +1,11 @@
+%gcd(A,B,R)
+%(i,i,o)
+gcd(A,0,1).
+gcd(A,B,R):-B=:=0, R is A
+gcd(A,B,R):-A>B, gcd(B,A mod B)
+gcd(A,B,R):-A<=B, gcd(A,B mod A)
+
+%leastCommonMultiple(L,R)
+%(i,o)
+leastCommonMultiple([],1).
+leastCommonMultiple([H|T],R):-leastCommonMultiple(T,Rs), R is H*Rs/gcd(H,Rs)

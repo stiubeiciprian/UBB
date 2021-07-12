@@ -1,0 +1,35 @@
+int
+bool
+char
+string
++
+-
+=
+==
+!=
+<
+>
+<=
+>=
+and
+or
+not
+(
+)
+[
+]
+:
+;
+,
+ 
+  
+
+if
+else
+elif
+input
+print
+while
+for
+identifier 0
+constants 1

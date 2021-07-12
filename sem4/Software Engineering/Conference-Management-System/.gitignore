@@ -1,0 +1,5 @@
+.pytest_cache
+/src/.pytest_cache
+/src/db.sqlite3
+.idea
+doc.txt

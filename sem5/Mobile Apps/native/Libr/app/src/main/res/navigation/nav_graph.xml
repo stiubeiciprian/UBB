@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/BookListFragment">
+
+        <fragment
+            android:id="@+id/BookListFragment"
+            android:name="com.stiubeiciprian.libr.BookListFragment"
+            tools:layout="@layout/fragment_book_list">
+
+            <action
+                android:id="@+id/action_BookListFragment_to_BookDetailFragment"
+                app:destination="@id/BookDetailFragment"
+                app:enterAnim="@anim/fragment_fade_enter"
+                app:exitAnim="@anim/fragment_fade_exit" />
+
+            <action
+                android:id="@+id/action_BookListFragment_to_AddBookFragment"
+                app:destination="@id/AddBookFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/AddBookFragment"
+            android:name="com.stiubeiciprian.libr.AddBookFragment"
+            tools:layout="@layout/fragment_add_book">
+
+            <action
+                android:id="@+id/action_AddBookFragment_to_BookListFragment"
+                app:destination="@id/BookListFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/BookDetailFragment"
+            android:name="com.stiubeiciprian.libr.BookDetailFragment"
+            tools:layout="@layout/fragment_book_detail">
+
+<!--            <action-->
+<!--                android:id="@+id/action_BookDetailFragment_to_BookListFragment"-->
+<!--                app:destination="@id/BookListFragment" />-->
+
+            <action
+                android:id="@+id/action_BookDetailFragment_to_UpdateBookFragment"
+                app:destination="@id/UpdateBookFragment"
+                app:enterAnim="@anim/fragment_open_enter"
+                app:exitAnim="@anim/fragment_open_exit" />
+
+            <argument
+                android:name="currentBook"
+                app:argType="com.stiubeiciprian.libr.data.Book" />
+            <action
+                android:id="@+id/action_BookDetailFragment_to_BookListFragment"
+                app:destination="@id/BookListFragment" />
+        </fragment>
+
+    <fragment
+        android:id="@+id/UpdateBookFragment"
+        android:name="com.stiubeiciprian.libr.UpdateBookFragment"
+        tools:layout="@layout/fragment_update_book">
+
+        <argument
+            android:name="bookData"
+            app:argType="com.stiubeiciprian.libr.data.Book" />
+        <action
+            android:id="@+id/action_UpdateBookFragment_to_BookListFragment"
+            app:destination="@id/BookListFragment" />
+    </fragment>
+
+</navigation>

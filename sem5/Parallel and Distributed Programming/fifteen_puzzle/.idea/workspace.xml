@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="843c606e-3b84-4064-bf4d-6e17728075eb" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mhNBeF0PKGBud8S3kTSWfcblXC" />
+  <component name="PropertiesComponent">
+    <property name="ToolWindowStructure.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/LabAssiAsseProjectV02" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15215947" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ThreadRun">
+    <configuration name="MPJRun" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-13" />
+      <envs>
+        <env name="MPJ_HOME" value="C:\mpj-v0_44" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="runtime.starter.MPJRun" />
+      <module name="fifteen_puzzle" />
+      <option name="VM_PARAMETERS" value="-jar $MPJ_HOME$\lib\starter.jar puzzle.Main -np 5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadRun" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="puzzle.Main" />
+      <module name="fifteen_puzzle" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MPJRun" />
+      <item itemvalue="Application.ThreadRun" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="843c606e-3b84-4064-bf4d-6e17728075eb" name="Default Changelist" comment="" />
+      <created>1609941728606</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609941728606</updated>
+      <workItem from="1609941733757" duration="5997000" />
+      <workItem from="1610021503003" duration="171000" />
+      <workItem from="1610021699583" duration="1281000" />
+      <workItem from="1610023014453" duration="2495000" />
+      <workItem from="1610298826581" duration="9750000" />
+      <workItem from="1610366706882" duration="9206000" />
+      <workItem from="1614681525667" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

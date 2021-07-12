@@ -1,0 +1,23 @@
+<h2>Add grade</h2>
+
+<label>Select student:</label>
+<ol class="item">
+  <li *ngFor="let student of students " [class.selected]="student.id === studentId" (click)="onSelectStudent(student)">
+    <span>{{student.id}} - {{student.name}}</span>
+  </li>
+</ol>
+
+<label>Select problem:</label>
+<ol class="item">
+  <li *ngFor="let problem of problems " [class.selected]="problem.id === problemId" (click)="onSelectProblem(problem)">
+    <span>{{problem.id}} - {{problem.description}}</span>
+  </li>
+</ol>
+
+<div>
+  <label>Grade: </label>
+  <input type="number" [(ngModel)]="grade.value" placeholder="grade">
+</div>
+
+<button (click)="addGrade()">Add Grade</button>
+

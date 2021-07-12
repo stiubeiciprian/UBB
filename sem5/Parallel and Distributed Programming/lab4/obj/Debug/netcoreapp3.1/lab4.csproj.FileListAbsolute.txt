@@ -1,0 +1,39 @@
+D:\Facultate\An3\PDP\lab4\lab4\bin\Debug\netcoreapp3.1\lab4.exe
+D:\Facultate\An3\PDP\lab4\lab4\bin\Debug\netcoreapp3.1\lab4.deps.json
+D:\Facultate\An3\PDP\lab4\lab4\bin\Debug\netcoreapp3.1\lab4.runtimeconfig.json
+D:\Facultate\An3\PDP\lab4\lab4\bin\Debug\netcoreapp3.1\lab4.runtimeconfig.dev.json
+D:\Facultate\An3\PDP\lab4\lab4\bin\Debug\netcoreapp3.1\lab4.dll
+D:\Facultate\An3\PDP\lab4\lab4\bin\Debug\netcoreapp3.1\lab4.pdb
+D:\Facultate\An3\PDP\lab4\lab4\obj\Debug\netcoreapp3.1\lab4.csprojAssemblyReference.cache
+D:\Facultate\An3\PDP\lab4\lab4\obj\Debug\netcoreapp3.1\lab4.AssemblyInfoInputs.cache
+D:\Facultate\An3\PDP\lab4\lab4\obj\Debug\netcoreapp3.1\lab4.AssemblyInfo.cs
+D:\Facultate\An3\PDP\lab4\lab4\obj\Debug\netcoreapp3.1\lab4.csproj.CoreCompileInputs.cache
+D:\Facultate\An3\PDP\lab4\lab4\obj\Debug\netcoreapp3.1\lab4.dll
+D:\Facultate\An3\PDP\lab4\lab4\obj\Debug\netcoreapp3.1\lab4.pdb
+D:\Facultate\An3\PDP\lab4\lab4\obj\Debug\netcoreapp3.1\lab4.genruntimeconfig.cache
+C:\Users\stiub\Desktop\lab4\bin\Debug\netcoreapp3.1\lab4.exe
+C:\Users\stiub\Desktop\lab4\bin\Debug\netcoreapp3.1\lab4.deps.json
+C:\Users\stiub\Desktop\lab4\bin\Debug\netcoreapp3.1\lab4.runtimeconfig.json
+C:\Users\stiub\Desktop\lab4\bin\Debug\netcoreapp3.1\lab4.runtimeconfig.dev.json
+C:\Users\stiub\Desktop\lab4\bin\Debug\netcoreapp3.1\lab4.dll
+C:\Users\stiub\Desktop\lab4\bin\Debug\netcoreapp3.1\lab4.pdb
+C:\Users\stiub\Desktop\lab4\obj\Debug\netcoreapp3.1\lab4.csprojAssemblyReference.cache
+C:\Users\stiub\Desktop\lab4\obj\Debug\netcoreapp3.1\lab4.AssemblyInfoInputs.cache
+C:\Users\stiub\Desktop\lab4\obj\Debug\netcoreapp3.1\lab4.AssemblyInfo.cs
+C:\Users\stiub\Desktop\lab4\obj\Debug\netcoreapp3.1\lab4.csproj.CoreCompileInputs.cache
+C:\Users\stiub\Desktop\lab4\obj\Debug\netcoreapp3.1\lab4.dll
+C:\Users\stiub\Desktop\lab4\obj\Debug\netcoreapp3.1\lab4.pdb
+C:\Users\stiub\Desktop\lab4\obj\Debug\netcoreapp3.1\lab4.genruntimeconfig.cache
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\bin\Debug\netcoreapp3.1\lab4.exe
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\bin\Debug\netcoreapp3.1\lab4.deps.json
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\bin\Debug\netcoreapp3.1\lab4.runtimeconfig.json
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\bin\Debug\netcoreapp3.1\lab4.runtimeconfig.dev.json
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\bin\Debug\netcoreapp3.1\lab4.dll
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\bin\Debug\netcoreapp3.1\lab4.pdb
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\obj\Debug\netcoreapp3.1\lab4.csprojAssemblyReference.cache
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\obj\Debug\netcoreapp3.1\lab4.AssemblyInfoInputs.cache
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\obj\Debug\netcoreapp3.1\lab4.AssemblyInfo.cs
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\obj\Debug\netcoreapp3.1\lab4.csproj.CoreCompileInputs.cache
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\obj\Debug\netcoreapp3.1\lab4.dll
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\obj\Debug\netcoreapp3.1\lab4.pdb
+E:\UBB\sem5\Parallel and Distributed Programming\lab4\obj\Debug\netcoreapp3.1\lab4.genruntimeconfig.cache

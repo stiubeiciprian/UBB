@@ -1,0 +1,6 @@
+.idea
+out
+
+*.pdf
+*.doc
+target

@@ -1,0 +1,10 @@
+int a=16
+int b=28
+int aux
+
+while b != 0:
+    aux = a
+    a = b
+b = aux % b
+
+print("gcd=", b)

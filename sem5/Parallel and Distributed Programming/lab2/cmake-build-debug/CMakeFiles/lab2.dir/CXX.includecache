@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/UBB/sem5/Parallel and Distributed Programming/lab2/main.cpp
+iostream
+-
+vector
+-
+queue
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+cstdlib
+-
+ctime
+-
+algorithm
+-
+assert.h
+-
+

@@ -1,0 +1,18 @@
+<div *ngIf="grade">
+  <h2>Grade for problem {{grade.problemId}} of student {{grade.studentId}}</h2>
+  <div>
+    <label>Value: </label> {{grade.value}}
+    <input [(ngModel)]="grade.value" placeholder="value">
+  </div>
+  <div>
+    <label>Student id: </label> {{grade.studentId}}
+    <input [(ngModel)]="grade.studentId" placeholder="studentId">
+  </div>
+  <div>
+    <label>Problem id: </label> {{grade.problemId}}
+    <input [(ngModel)]="grade.problemId" placeholder="problemId">
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+  <button (click)="delete()">Delete</button>
+</div>

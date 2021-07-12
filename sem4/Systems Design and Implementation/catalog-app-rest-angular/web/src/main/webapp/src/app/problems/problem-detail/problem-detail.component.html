@@ -1,0 +1,14 @@
+<div *ngIf="problem">
+  <h2>Problem {{problem.number}} details</h2>
+  <div>
+    <label>Number: </label> {{problem.number}}
+    <input [(ngModel)]="problem.number" placeholder="number">
+  </div>
+  <div>
+    <label>Description: </label> {{problem.description}}
+    <input [(ngModel)]="problem.description" placeholder="description">
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+  <button (click)="delete()">Delete</button>
+</div>

@@ -1,0 +1,9 @@
+<ol class="grades">
+  <li *ngFor="let grade of grades "
+      (click)="onSelect(grade)">
+    {{grade.value}}
+  </li>
+</ol>
+
+
+<button (click)="addGrade()">Add Grade</button>

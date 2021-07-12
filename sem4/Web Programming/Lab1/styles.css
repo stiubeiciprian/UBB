@@ -1,0 +1,32 @@
+body {
+  font-family: "Arial";
+  display: grid;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px #0f0f0f;
+  font-family: "Arial";
+  font-size: 1.5em;
+}
+
+table, th, td {
+  border: 1px dotted black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.circle-image {
+  background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/49517593632_174b15b620_k.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 5px 5px grey;
+}
+.rounded-image {
+  border-radius: 50%;
+}
+
+ul {
+ list-style-type: square;
+}
