@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+a {
+  font-family: 'Montserrat';
+  text-decoration: none;
+}
+
+.App {
+  font-family: 'Montserrat';
+}
+
+.homepage {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../styles/images/image.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: calc(100vh - 40px);
+}
+
+@media only screen and (max-width:500px) {
+  .homepageText {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 0.5em;
+  }
+
+  .homepageDesc {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 2.4em;
+  }
+}
+
+@media only screen and (min-width:500px) {
+  .homepageText {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 3em;
+    margin-left: 5em;
+  }
+  .homepageDesc {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 1.5em;
+    margin-left: 37em;
+    margin-top: -8em;
+    width: 30vw;
+  }
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.App-header {
+  /* max-height: 100px; */
+}
+
+.button {
+  font-family: 'Montserrat';
+  letter-spacing: 0.2em;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 2.5em;
+  width: 15em;
+  height: 3em;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 0.8em;
+  text-align:center;
+  border: none;
+  opacity: 0.85;
+  outline: none;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+a.button1 {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family:'Montserrat',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+a.button1:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+}
+
+@media only screen and (max-width:500px){
+   a.button1{
+    display:block;
+    margin:0.4em auto;
+    width: 50vw;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width:500px){
+   a.button1{
+    width: 30vw;
+  }
+}
